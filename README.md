@@ -13,7 +13,7 @@ Die Seite ist anschließend unter `http://localhost:3000` erreichbar. Produktion
 
 ## Mit Cloudflare Pages veröffentlichen
 
-1. Vor dem öffentlichen Start die Unternehmensangaben, Platzhalter und Rechtstexte unten ergänzen.
+1. Die Seite kann als Vorschau bereitgestellt werden. Solange `NEXT_PUBLIC_SITE_READY` nicht `true` ist, tragen die Seiten ein `noindex`-Meta-Tag und die Sitemap enthält keine Einträge. Vor der Freigabe für Suchmaschinen die Unternehmensangaben, Platzhalter und Rechtstexte unten ergänzen.
 2. Den freigegebenen Stand in den Branch `prd` bringen und zu GitHub pushen. `dev` bleibt der Entwicklungsbranch.
 3. In [Cloudflare Workers & Pages](https://dash.cloudflare.com/?to=/:account/workers-and-pages) **Create application → Continue to Pages → Import an existing Git repository → Get started → Connect GitHub** wählen. Beim GitHub-Zugriff möglichst **Only select repositories** und `tdereyurt/detailwerk_autoaufbereitung` auswählen.
 4. Als Produktionsbranch `prd` wählen. Preset **Next.js (Static HTML Export)**, Build-Befehl `npm run build`, Ausgabeverzeichnis `out`, Stammverzeichnis `/` festlegen. Falls die Build-Umgebung eine Node-Version verlangt, `NODE_VERSION=22` setzen.
@@ -28,6 +28,7 @@ Alle austauschbaren Unternehmensangaben stehen in `src/lib/site.ts`. Besonders z
 Kopieren Sie bei Bedarf `.env.example` nach `.env.local` und setzen Sie:
 
 - `NEXT_PUBLIC_SITE_URL`: stabile öffentliche Website-URL für Open Graph und Sitemap. Ohne Wert verwendet der Cloudflare-Build vorläufig `CF_PAGES_URL`.
+- `NEXT_PUBLIC_SITE_READY`: erst nach dem Ersetzen und Prüfen der Pflichtangaben in Cloudflare auf `true` setzen und neu bauen.
 - `NEXT_PUBLIC_FORMSPREE_ENDPOINT`: optionaler Endpunkt eines eingerichteten Formulars. In Cloudflare Pages unter **Settings → Environment variables** setzen.
 
 Ohne Formspree-Endpunkt öffnet das Formular nach Validierung das E-Mail-Programm mit einer vorbereiteten Nachricht. Die Besucherin oder der Besucher muss diese E-Mail selbst absenden. Mit einem Formspree-Endpunkt kann die Anfrage direkt online gesendet werden; die Datenschutzerklärung muss den tatsächlich verwendeten Dienst korrekt beschreiben. Der Empfänger der E-Mail-Variante ist zentral in `src/lib/site.ts` hinterlegt.

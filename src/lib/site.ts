@@ -21,6 +21,7 @@ export const site = {
   },
   addressLine: "Straße und Hausnummer ergänzen",
   openingHours: "Termine nach Vereinbarung – Zeiten ergänzen",
+  readyForIndexing: process.env.NEXT_PUBLIC_SITE_READY === "true",
   siteUrl: (process.env.NEXT_PUBLIC_SITE_URL || process.env.CF_PAGES_URL || "").replace(/\/$/, ""),
 } as const;
 

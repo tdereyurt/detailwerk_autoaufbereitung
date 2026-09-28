@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     images: [{ url: site.siteUrl ? `${site.siteUrl}/og-image.jpg` : "/og-image.jpg", width: 1200, height: 630, alt: "Detailwerk – Fahrzeugaufbereitung in Hallein" }],
   },
   twitter: { card: "summary_large_image" },
-  robots: { index: true, follow: true },
+  robots: { index: site.readyForIndexing, follow: site.readyForIndexing },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
