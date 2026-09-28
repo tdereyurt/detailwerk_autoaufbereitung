@@ -1,9 +1,9 @@
 /** Zentrale, vor Veröffentlichung zu prüfende Unternehmensangaben. */
 export const site = {
   name: "Diamond Point",
-  tagline: "Fahrzeugaufbereitung mit Blick fürs Detail",
+  tagline: "Präzision in Pflege und Finish",
   description:
-    "Professionelle Fahrzeugaufbereitung und Detailing in Hallein & Salzburg. Innenraum, Lack, Versiegelung und Komplettpakete – individuell auf Ihr Fahrzeug abgestimmt.",
+    "Diamond Point: Fahrzeugaufbereitung und Detailing in Hallein bei Salzburg. Sorgfältige Innenraum- und Außenpflege, Lackkorrektur und Keramikversiegelung – passend zum Zustand Ihres Fahrzeugs.",
   location: "Hallein",
   postalCode: "5400",
   city: "Hallein",

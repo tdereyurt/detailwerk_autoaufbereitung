@@ -9,7 +9,7 @@ const playfair = localFont({ src: "../fonts/playfair-display-latin.woff2", varia
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#10110f",
+  themeColor: "#0b121b",
 };
 
 export const metadata: Metadata = {
