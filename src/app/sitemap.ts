@@ -4,6 +4,6 @@ import { site } from "@/lib/site";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  if (!site.siteUrl) return [];
+  if (!site.readyForIndexing || !site.siteUrl) return [];
   return [{ url: site.siteUrl, changeFrequency: "monthly", priority: 1 }];
 }
