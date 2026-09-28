@@ -14,7 +14,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.siteUrl || "http://localhost:3000"),
-  title: { default: "Detailwerk | Fahrzeugaufbereitung in Hallein", template: "%s | Detailwerk" },
+  title: { default: `${site.name} | Fahrzeugaufbereitung in Hallein`, template: `%s | ${site.name}` },
   description: site.description,
   applicationName: site.name,
   ...(site.siteUrl ? { alternates: { canonical: site.siteUrl } } : {}),
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_AT",
     siteName: site.name,
-    title: "Detailwerk | Fahrzeugaufbereitung in Hallein",
+    title: `${site.name} | Fahrzeugaufbereitung in Hallein`,
     description: site.description,
-    images: [{ url: site.siteUrl ? `${site.siteUrl}/og-image.jpg` : "/og-image.jpg", width: 1200, height: 630, alt: "Detailwerk – Fahrzeugaufbereitung in Hallein" }],
+    images: [{ url: site.siteUrl ? `${site.siteUrl}/og-image.jpg` : "/og-image.jpg", width: 1200, height: 630, alt: `${site.name} – Fahrzeugaufbereitung in Hallein` }],
   },
   twitter: { card: "summary_large_image" },
   robots: { index: site.readyForIndexing, follow: site.readyForIndexing },

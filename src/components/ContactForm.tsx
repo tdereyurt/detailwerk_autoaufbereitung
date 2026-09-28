@@ -30,7 +30,7 @@ export function ContactForm() {
         "",
         String(data.get("message")),
       ].join("\n");
-      window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(`Detailwerk-Anfrage: ${service}`)}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(`${site.name}-Anfrage: ${service}`)}&body=${encodeURIComponent(body)}`;
       setState("email");
       setMessage("Ihr E-Mail-Programm wurde geöffnet. Bitte senden Sie die vorbereitete Nachricht dort selbst ab.");
       return;

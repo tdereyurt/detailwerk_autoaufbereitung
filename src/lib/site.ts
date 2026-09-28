@@ -1,6 +1,6 @@
 /** Zentrale, vor Veröffentlichung zu prüfende Unternehmensangaben. */
 export const site = {
-  name: "Detailwerk",
+  name: "Diamond Point",
   tagline: "Fahrzeugaufbereitung mit Blick fürs Detail",
   description:
     "Professionelle Fahrzeugaufbereitung und Detailing in Hallein bei Salzburg. Innenraum, Lack, Versiegelung und Komplettpakete – individuell auf Ihr Fahrzeug abgestimmt.",
@@ -8,6 +8,7 @@ export const site = {
   postalCode: "5400",
   city: "Hallein",
   country: "AT",
+  // Bestehende Kontaktadresse bis zur Bereitstellung einer neuen Domain beibehalten.
   email: "oguzhan.duman@detailwerk.com",
   // Platzhalter: erst nach Eintrag einer echten Nummer werden Telefon- und WhatsApp-Links aktiv.
   phoneDisplay: "0660-xxxxxxxx",

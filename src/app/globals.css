@@ -31,10 +31,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .site-header { position: absolute; z-index: 30; width: 100%; top: 0; left: 0; border-bottom: 1px solid rgba(255,255,255,.14); }
 .header-inner { display: flex; align-items: center; min-height: 91px; gap: 32px; }
 .brand { display: inline-flex; align-items: center; gap: 12px; flex-shrink: 0; }
-.brand-mark { position: relative; display: grid; place-items: center; width: 37px; height: 37px; border: 1px solid var(--copper); color: var(--copper); font-family: var(--font-playfair), Georgia, serif; font-size: 24px; line-height: 1; }
-.brand-mark i { position: absolute; height: 1px; width: 15px; right: -7px; bottom: 5px; background: var(--copper); transform: rotate(-45deg); }
+.brand-mark { display: grid; place-items: center; width: 37px; height: 37px; border: 1px solid var(--copper); color: var(--copper); }
+.brand-mark svg { width: 27px; height: 27px; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .brand-word { display: flex; flex-direction: column; gap: 3px; }
-.brand-word strong { font-size: 17px; letter-spacing: .19em; line-height: 1; }
+.brand-word strong { font-size: 16px; letter-spacing: .14em; line-height: 1; white-space: nowrap; }
 .brand-word small { color: #bbbcb7; font-size: 7px; letter-spacing: .27em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(18px, 2.3vw, 34px); margin-left: auto; }
 .desktop-nav a { color: #e5e4e0; font-size: 12px; font-weight: 600; transition: color .2s; }
@@ -204,7 +204,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .footer { background: #10120f; border-top: 1px solid #393d36; }
 .footer-main { display: flex; justify-content: space-between; gap: 55px; padding: 75px 0 80px; }
 .brand-footer .brand-mark { width: 43px; height: 43px; font-size: 28px; }
-.brand-footer .brand-word strong { font-size: 21px; }
+.brand-footer .brand-word strong { font-size: 20px; }
 .footer-main > div:first-child > p { color: #9fa39a; font-size: 13px; line-height: 1.8; margin: 23px 0 0; }
 .footer-links { display: flex; gap: clamp(50px, 9vw, 145px); }
 .footer-links > div { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
@@ -265,7 +265,7 @@ a.social-icon:hover { color: #151713; border-color: var(--copper); background: v
   .section-heading h2 { font-size: clamp(42px, 11vw, 58px); }
   .header-inner { min-height: 72px; }
   .brand-mark { width: 33px; height: 33px; font-size: 21px; }
-  .brand-word strong { font-size: 14px; }
+  .brand-word strong { font-size: 13px; letter-spacing: .1em; }
   .brand-word small { font-size: 6px; }
   .hero { min-height: 740px; min-height: 100svh; }
   .hero-image { object-position: 60% center; opacity: .7; }
