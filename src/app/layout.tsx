@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: "Detailwerk | Fahrzeugaufbereitung in Hallein",
     description: site.description,
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Detailwerk – Fahrzeugaufbereitung in Hallein" }],
+    images: [{ url: site.siteUrl ? `${site.siteUrl}/og-image.jpg` : "/og-image.jpg", width: 1200, height: 630, alt: "Detailwerk – Fahrzeugaufbereitung in Hallein" }],
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
