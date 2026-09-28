@@ -1,4 +1,4 @@
-# Detailwerk
+# Diamond Point
 
 Website für Fahrzeugaufbereitung und Detailing in Hallein, gebaut mit Next.js 16, TypeScript und Tailwind CSS 4. Der Build erzeugt eine statische Website für Cloudflare Pages.
 
