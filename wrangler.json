@@ -1,0 +1,8 @@
+{
+  "name": "detailwerk-autoaufbereitung",
+  "compatibility_date": "2026-09-28",
+  "previews": {},
+  "assets": {
+      "directory": "./dist"
+    }
+}
